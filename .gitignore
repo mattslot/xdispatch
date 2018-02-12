@@ -1,3 +1,7 @@
 /*.txt.user
 /package/debian/changelog
 /package/ubuntu/changelog
+/build_win32
+/build_win64
+/build_mac
+/CMakeFiles
