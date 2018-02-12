@@ -20,6 +20,7 @@
 
 
 #include <iostream>
+#include <string>
 #include <stdlib.h>
 #include "xdispatch_internal.h"
 
