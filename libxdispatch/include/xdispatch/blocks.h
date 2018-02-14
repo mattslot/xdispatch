@@ -128,6 +128,10 @@ typedef void (^dispatch_iteration_block_t)(
   #  define $ [ = ]
  # endif
 
+#include <functional>
+typedef std::function<void(void)> dispatch_block_t;
+typedef std::function<void(size_t)> dispatch_iteration_block_t;
+
 #endif // if XDISPATCH_HAS_BLOCKS
 
 /** @} */
