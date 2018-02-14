@@ -31,6 +31,9 @@
 # is this a ci triggered build?
 if( $ENV{BUILD_NUMBER} )
     set( XDISPATCH_BUILD_NO "b$ENV{BUILD_NUMBER}" )
+# Visual Studio resource files don't like git hashes in the version field
+elseif( WIN32 )
+    set( XDISPATCH_WC_REVISION "0" )
 # if not use git for version info (or at least try to)
 else()
     find_package(Git)

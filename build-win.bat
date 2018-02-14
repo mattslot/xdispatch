@@ -1,3 +1,6 @@
+@Echo off
+SETLOCAL EnableDelayedExpansion
+
 md build_win32
 cd build_win32
 cmake -G "Visual Studio 14 2015" ..
